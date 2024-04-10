@@ -22,7 +22,6 @@ if __name__ == "__main__":
                             encoded_password += str(int(digit) + 3 - 10)
                         else:
                             encoded_password += str(int(digit) + 3)
-                    password = str()
                     print(f'Your encoded password: {encoded_password}')
                 else:
                     print('Invalid password: Please use 8 non-negative numbers')
@@ -30,8 +29,10 @@ if __name__ == "__main__":
                 print('Invalid password: An Error occurred')
             print('')
 
-
+        # PARTNER CODE
         # Option 2: decoder
+        elif option == '2':
+            print("The encoded password is " + encoded_password + ", and the original password is " + password + ".")
 
         # Option 3: exit the program
         elif option == '3':
